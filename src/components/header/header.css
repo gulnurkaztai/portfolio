@@ -1,2 +1,98 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: start;
+    height: 100%;
+    position: relative;
+}
 
 
+.header__socials {
+    display: flex;
+    flex-direction: row;
+margin-top: 2rem;
+    gap: 1rem;
+
+}
+
+.icon:hover {
+    transform: scale(1.5);
+
+  }
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* background: linear-gradient(var(--color-primary), transparent); */
+.me {
+    background-image: url(../../assets/smoke2.png);
+    background-repeat: no-repeat;
+    width: 80rem;
+    height: 62rem;
+    margin-top: -20rem;
+    margin-right: 0%;
+    overflow: hidden;
+
+}
+
+.my-img{
+    width: 22rem;
+    height: 33rem;
+    position: absolute; right: 0; bottom: 0;
+    transition-delay:.1s; 
+    transition:.6s ease in;
+    animation: imgFlyIn .5s linear;
+}
+
+
+@keyframes imgFlyIn{
+    0% { transform:translateX(100%); }
+    100% { transform:translateX(0%); }
+}
+  
+
+.flyIn {
+    color:#fff;
+    font-family:'Raleway';
+    text-transform:uppercase;
+
+    position:relative;
+  text-shadow: 2px 2px 40px rgba(0,0,0,0.7);
+}
+.lineOne {
+  transition-delay:.3s; 
+  transition:.3s ease in;
+  animation: txtFlyIn .3s linear;
+}
+.lineTwo {
+    transition-delay:.4s; 
+    transition:.6s ease in;
+    animation: txtFlyIn .5s linear;
+}
+.lineThree {
+    transition-delay:.9s; 
+    transition:.8s ease in;
+    animation: txtFlyIn .9s linear;
+}
+.lineOne, .lineTwo, .lineThree {
+
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+@keyframes fadeIn{
+    0% { opacity:0;}
+    100% { opacity:1;}
+}
+@keyframes txtFlyIn{
+    0% { transform:translateX(-100%); }
+    100% { transform:translateX(0%); }
+}
+ 
