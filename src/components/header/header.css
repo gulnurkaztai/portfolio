@@ -29,22 +29,18 @@ margin-top: 2rem;
     height: 30px;
 }
 
-
-/* background: linear-gradient(var(--color-primary), transparent); */
-.me {
-    background-image: url(../../assets/smoke2.png);
-    background-repeat: no-repeat;
-    width: 80rem;
-    height: 62rem;
-    margin-top: -20rem;
-    margin-right: 0%;
-    overflow: hidden;
-
-}
+  @keyframes bounce-up-down {
+    20% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
 
 .my-img{
-    width: 22rem;
-    height: 33rem;
+    width: 32rem;
+    height: 45rem;
     position: absolute; right: 0; bottom: 0;
     transition-delay:.1s; 
     transition:.6s ease in;
@@ -60,9 +56,6 @@ margin-top: 2rem;
 
 .flyIn {
     color:#fff;
-    font-family:'Raleway';
-    text-transform:uppercase;
-
     position:relative;
   text-shadow: 2px 2px 40px rgba(0,0,0,0.7);
 }
@@ -96,3 +89,41 @@ margin-top: 2rem;
     100% { transform:translateX(0%); }
 }
  
+/* tablets */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 90vh;
+    }
+    .my-img{
+        width: 26rem;
+        height: 35rem;
+    }
+  }
+  
+  /* phones */
+@media screen and (max-width: 600px) {
+    header {
+        height: 90vh;
+    }
+
+    .my-img{
+        width: 20rem;
+        height: 30rem;
+
+    }
+}
+
+  /* super small phones */
+  @media screen and (max-width: 375px) {
+    header {
+        margin-top: -5rem;
+        height: 100vh;
+    }
+    .my-img{
+        width: 20rem;
+        height: 28rem;
+    }
+    .scroll_down {
+        display: none;
+    }
+}
