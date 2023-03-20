@@ -1,34 +1,28 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Header from '../src/components/header/Header'
 import Projects from '../src/components/projects/Projects'
 import Contact from '../src/components/contact/Contact'
 import Footer from '../src/components/footer/Footer'
+import About from './components/about/About'
+import Nav from './components/nav/Nav'
+import TechStack from './components/stack/TechStack'
 
 
 function App() {
 
   return (
     <>
-    <Router>
-    <div className=''>
-
-
-      <Routes>
-      <Route path='/' element={<Header/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-
-      </Routes>
-
-    <Footer/>
-    </div>
-  </Router>
-
-  </>
-
-
-
-
+      <Header/>
+      <Nav/>
+      <TechStack/>
+      <Projects/>
+      <About/>
+      <Contact/>
+      <Footer/>
+      <ToastContainer theme="dark" hideProgressBar/>
+    </>
   )
 }
 
