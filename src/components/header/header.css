@@ -90,18 +90,18 @@ margin-top: 2rem;
 }
  
 /* tablets */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (orientation: portrait){
     header {
         height: 90vh;
     }
     .my-img{
-        width: 26rem;
-        height: 35rem;
+        width: 36rem;
+        height: 47rem;
     }
   }
   
   /* phones */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: portrait){
     header {
         height: 90vh;
     }
@@ -113,15 +113,39 @@ margin-top: 2rem;
     }
 }
 
+  /* phones in full screen mode*/
+  @media screen and (max-width: 900px) and (orientation: landscape){
+    header {
+        height: 90vh;
+    }
+
+    .my-img{
+        width: 23rem;
+        height: 30rem;
+
+    }
+}
   /* super small phones */
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 375px) and (orientation: portrait){
     header {
         margin-top: -5rem;
         height: 100vh;
     }
     .my-img{
-        width: 20rem;
-        height: 28rem;
+        width: 15rem;
+        height: 20rem;
+    }
+    .scroll_down {
+        display: none;
+    }
+}
+
+  /* super small phones in full screen mode*/
+  @media screen and (max-width: 700px) and (orientation: landscape){
+
+    .my-img{
+        width: 15rem;
+        height: 20rem;
     }
     .scroll_down {
         display: none;
