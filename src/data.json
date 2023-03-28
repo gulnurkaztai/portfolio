@@ -2,19 +2,19 @@
 [
     {
         "id": 1,
-        "image": "../src/assets/pxfuel.jpg",
-        "title": "Project 1",
-        "desc": "Lorem itsum",
-        "code": "https://github.com/gulnurkaztai?tab=overview&from=2023-03-01&to=2023-03-18",
-        "live": "https://github.com/gulnurkaztai?tab=overview&from=2023-03-01&to=2023-03-18"
+        "image": "../src/assets/comingsoon.jpg",
+        "title": "Project",
+        "desc": "...",
+        "code": "",
+        "live": "https://github.com/gulnurkaztai/orta-app"
     },
     {
         "id": 1,
-        "image": "../src/assets/pxfuel.jpg",
-        "title": "Project 1",
-        "desc": "Lorem itsum",
-        "code": "https://github.com/gulnurkaztai?tab=overview&from=2023-03-01&to=2023-03-18",
-        "live": "https://github.com/gulnurkaztai?tab=overview&from=2023-03-01&to=2023-03-18"
+        "image": "../src/assets/comingsoon.jpg",
+        "title": "Project",
+        "desc": "...",
+        "code": "",
+        "live": "https://github.com/gulnurkaztai/superqaharmandar"
     }
 
 ]
